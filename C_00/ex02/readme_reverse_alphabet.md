@@ -31,4 +31,4 @@ The loop will end when the value of the integer variable equals 97. In this way 
 |||
 |:-|:-|
 |code||
-|<pre> #include <unistd.h> <br> #include <ft_putchar.h> <br> <br> void  ft_print_alphabet(void); <br> int main(void) <br> { <br>   ft_print_alphabet(); <br> } <br> void  ft_print_alphabet(void) <br> { <br>   int car; <br>   car = 122; <br>   while (car > 97 ) <br>   { <br>     ft_putchar(car); <br>     car++; <br>   } <br>}   </pre> |![print_alphabet.png](print_alphabet.png)|
+|<pre> #include <unistd.h> <br> #include <ft_putchar.h> <br> <br> void  ft_print_alphabet(void); <br> int main(void) <br> { <br>   ft_print_alphabet(); <br> } <br> void  ft_print_alphabet(void) <br> { <br>   int car; <br>   car = 122; <br>   while (car > 97 ) <br>   { <br>     ft_putchar(car); <br>     car++; <br>   } <br>}   </pre> |![print_reverse_alphabet.png](print_reverse_alphabet.png)|
