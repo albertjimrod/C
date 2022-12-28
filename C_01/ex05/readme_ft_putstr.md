@@ -27,4 +27,4 @@
 |||
 |:-|:-|
 |code||
-|<pre> <br> #include <unistd.h><br> #include <stdio.h><br> <br> void  ft_putstr(char *str);<br> <br> int main(void)<br> {<br>   char cadena[3] = "abc";<br>  <br>   ft_putstr(cadena);<br>   write(1,"\n",1);<br>   return (0);<br> }<br> <br> void  ft_putstr(char *str)<br> {<br>   int i;<br>   i = 0;<br>   while (str[i] != '\0')<br>   {<br>     write(1,&str[i],1);<br>     i++;<br>   } <br> } </pre> | ![putstr.png](putstr.png) ![putstr1.png](putstr1.png) ![putstr2.png](putstr2.png) |
+|<pre> <br> #include <unistd.h><br> #include <stdio.h><br> <br> void  ft_putstr(char *str);<br> <br> int main(void)<br> {<br>   char cadena[3] = "abc";<br>  <br>   ft_putstr(cadena);<br>   write(1,"\n",1);<br>   return (0);<br> }<br> <br> void  ft_putstr(char *str)<br> {<br>   int i;<br>   i = 0;<br>   while (str[i] != '\0')<br>   {<br>     write(1,&str[i],1);<br>     i++;<br>   } <br> } </pre> | ![putstr2.png](putstr2.png) ![putstr1.png](putstr1.png) ![putstr.png](putstr.png) |
