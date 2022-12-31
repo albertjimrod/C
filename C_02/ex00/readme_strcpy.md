@@ -37,4 +37,4 @@
 |||
 |:-|:-|
 |code||
-|<pre> <br> #include <unistd.h><br> int main(void)<br> {<br>    char *retorno;<br>    char  fuente[size]="ABh";<br>    char  dest[size];<br> <br>    retorno = ft_strcpy(dest, fuente);<br><br>    write(1, retorno, SIZE);<br>    write(1, "\n", 1);<br>    return (0);<br> }<br> <br> char *ft_strcpy(char *dest, char *src)<br> {<br>    int cnt;<br>    cnt = 0;<br><br>    while (cnt != SIZE)<br>    {<br>       dest[cnt] = src[cnt];<br>       ++cnt;<br>    }<br>    dest[cnt] = '\0';<br>    return (dest);<br> } </pre> |![strcpy.png](strcpy.png) [strcpy1.png](strcpy1.png)|
+|<pre> <br> #include <unistd.h><br> int main(void)<br> {<br>    char *retorno;<br>    char  fuente[size]="ABh";<br>    char  dest[size];<br> <br>    retorno = ft_strcpy(dest, fuente);<br><br>    write(1, retorno, SIZE);<br>    write(1, "\n", 1);<br>    return (0);<br> }<br> <br> char *ft_strcpy(char *dest, char *src)<br> {<br>    int cnt;<br>    cnt = 0;<br><br>    while (cnt != SIZE)<br>    {<br>       dest[cnt] = src[cnt];<br>       ++cnt;<br>    }<br>    dest[cnt] = '\0';<br>    return (dest);<br> } </pre> |![strcpy.png](strcpy.png) ![strcpy1.png](strcpy1.png)|
