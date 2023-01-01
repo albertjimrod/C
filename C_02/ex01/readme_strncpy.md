@@ -46,4 +46,4 @@ Si se escribe un carácter NUL en el destino, la función stpncpy() devolverá l
 |||
 |:-|:-|
 |code||
-|<pre> <br> char	*ft_strncpy(char *dest, char *src, unsigned int n)<br> {<br> 	unsigned int	i;<br> <br> 	i = 0;<br> 	if (n > 0)<br> 	{<br> 		while (src[i] != '\0' && i < n)<br> 		{<br> 			dest[i] = src[i];<br> 			i++;<br> 		}<br> 		while (i < n)<br> 		{<br> 			dest[i] = '\0';<br> 			i++;<br> 		}<br> 	}<br> 	return (dest);<br> }  </pre> |![strncpy.png](strncpy.png)|
+|<pre> <br> char	*ft_strncpy(char *dest, char *src, unsigned int n)<br> {<br> 	unsigned int	i;<br> <br> 	i = 0;<br> 	if (n > 0)<br> 	{<br> 		while (src[i] != '\0' && i < n)<br> 		{<br> 			dest[i] = src[i];<br> 			i++;<br> 		}<br> 		while (i < n)<br> 		{<br> 			dest[i] = '\0';<br> 			i++;<br> 		}<br> 	}<br> 	return (dest);<br> }  </pre> ||
