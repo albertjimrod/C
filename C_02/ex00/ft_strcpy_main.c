@@ -1,32 +1,34 @@
-#include <unistd.h>
-#include <stdio.h>
-#define SIZE 3
-
-char  *ft_strcpy(char *dest, char *src);
-
-int main(void)
-{
-   char *retorno;
-   char  fuente[size]="ABh";
-   char  dest[size];
-
-   retorno = ft_strcpy(dest, fuente);
-   
-   write(1, retorno, SIZE);
-   write(1, "\n", 1);
-   return (0);
-}
-
 char *ft_strcpy(char *dest, char *src)
 {
-   int cnt;
-   cnt = 0;
+   int i;
+   i = 0;
 
-   while (cnt != SIZE)
+   while (cnt != '\0')
    {
-      dest[cnt] = src[cnt];
-      ++cnt;
+      dest[i] = src[i];
+      i++;
    }
-   dest[cnt] = '\0';
+   dest[i] = '\0';
    return (dest);
 }
+
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	char	source[30] = {"This is the source string!"};
+// 	char	destination[225] = {"The"};
+
+// 	printf("the result of ft_strcpy = %s\n",
+// 		ft_strcpy(destination, " an apple"));
+// 	printf("the result of ft_strcpy = %s\n",
+// 		ft_strcpy(destination, " a day"));
+// 	printf("the result of ft_strcpy = %s\n",
+// 		ft_strcpy(destination, " keeps"));
+// 	printf("the result of ft_strcpy = %s\n",
+// 		ft_strcpy(destination, "the doctor"));
+// 	printf("the result of ft_strcpy = %s\n",
+// 		ft_strcpy(destination, " away! "));
+// 	printf("the result of ft_strcpy = %s\n",
+// 		ft_strcpy(destination, source));
+// 	return (0);
+// }

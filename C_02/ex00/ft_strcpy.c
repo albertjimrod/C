@@ -1,19 +1,18 @@
-#include <unistd.h>
-#include <stdio.h>
-#define SIZE 3
+
 
 char  *ft_strcpy(char *dest, char *src);
 
 char *ft_strcpy(char *dest, char *src)
 {
-   int cnt;
-   cnt = 0;
+   int   i;
 
-   while (cnt != SIZE)
+   i = 0;
+
+   while (cnt[i] != '\0')
    {
-      dest[cnt] = src[cnt];
-      ++cnt;
+      dest[i] = src[i];
+      ++i;
    }
-   dest[cnt] = '\0';
+   dest[i] = '\0';
    return (dest);
 }
